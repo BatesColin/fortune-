@@ -1,0 +1,17 @@
+.hidden-fortune {
+  display:none;
+}
+
+
+form {
+  font-size: 20px;
+}
+
+[type=checkbox] {
+  width:18px;
+  height:18px;
+}
+
+p {
+  font-size: 20px;
+}

@@ -5,10 +5,63 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Count Up By</title>
+    <title>Fortune Telling</title>
   </head>
   <body>
     <div class="container">
+      <h1>100% Accurate, Money-back Guarantee, Fortune Teller</h1>
+      <form id="fortune-survey">
+        <div class="form-group">
+          <label for="enter-name">Your Name</label>
+          <input id="enter-name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <p>Check all (somewhat loosely) applied:</p>
+          <input type="checkbox" name="lucky" value="1">Finding a penny<br>
+          <input type="checkbox" name="lucky" value="20">Finding a nice $20 bill<br>
+          <input type="checkbox" name="lucky" value="3">Winning the lottery<br>
+          <input type="checkbox" name="lucky" value="10">Bird poops on you<br>
+          <input type="checkbox" name="lucky" value="12">Your fortune cookie fortune was good<br>
+          <input type="checkbox" name="lucky" value="2">Nobody robbed you today<br>
+          <input type="checkbox" name="lucky" value="0">Nobody murdered you today<br>
+          <input type="checkbox" name="lucky" value="4">Your lunch tasted good<br>
+          <input type="checkbox" name="lucky" value="4">You didn't miss your bus<br>
+          <input type="checkbox" name="lucky" value="9">Your alarm wasn't that annoying today<br>
+          <input type="checkbox" name="lucky" value="7">Your favorite tv show has a new season on Netflix<br>
+          <input type="checkbox" name="lucky" value="5">You got more than 3 decent matches on Tinder<br>
+          <input type="checkbox" name="lucky" value="3">Some other lucky thing that isn't listed here<br>
+        </div>
+        <div class="form-group">
+          <p>Check all that may or may not have happened to you:</p>
+          <input type="checkbox" name="unlucky" value="30">You WERE murdered today<br>
+          <input type="checkbox" name="unlucky" value="3">met a black cat<br>
+          <input type="checkbox" name="unlucky" value="7">Broke a mirrior<br>
+          <input type="checkbox" name="unlucky" value="10">broke a condom<br>
+          <input type="checkbox" name="unlucky" value="5">The light turned red literally right when you got there<br>
+          <input type="checkbox" name="unlucky" value="6">The cop caught you as you tried to go through anyways<br>
+          <input type="checkbox" name="unlucky" value="7">He didn't buy your excuse<br>
+          <input type="checkbox" name="unlucky" value="8">He also didn't buy your drugs<br>
+          <input type="checkbox" name="unlucky" value="5">Your Lyft ride was not as advertised<br>
+          <input type="checkbox" name="unlucky" value="8">Your mom fell for an internet phishing scheme and lost <em>your</em> savings<br>
+          <input type="checkbox" name="unlucky" value="7">Your anscestry.com results found you related to Trump<br>
+          <input type="checkbox" name="unlucky" value="8">You won the lottery but on the condition that you must use internet explorer for the rest of your life<br>
+          <input type="checkbox" name="unlucky" value="3">You got stuck in Seattle riots traffic and were late to class<br>
+        </div>
+       <button type="submit">Submit Survey</button>
+      </form>
+
+      <div class="hidden-fortune" id="lucky">
+        <h2>You lucky human</h2>
+        <p>Doctors hate them, casinos loathe them; their trick? Being <span class="name"></span>.  <span class="name"></span> is blacklisted in 35 states' lotteries.  Ladders fall down before <span class="name"></span> can walk under them.  Black cats avoid <span class="name"></span> like the plague.  Murders are blind to <span class="name"></span>'s presence.</p>
+      </div>
+      <div class="hidden-fortune" id="neutral">
+        <h2>You're boringly average</h2>
+        <p>When it comes to luck <span class="name"></span> is Switzerland.  Nothing ever happens to <span class="name"></span>.  Like, seriously.  What does <span class="name"></span> even do?  <span class="name"></span>'s life is basically r/mildlyinteresting.  Go break some mirrors or something, you normie!</p>
+      </div>
+      <div class="hidden-fortune" id="unlucky">
+        <h2>Press F to pay respects</h2>
+        <p>What happened to <span class="name"></span>? People on FML look to <span class="name"></span> to feel better about themselves.  Someone get <span class="name"></span> some salt.  I bet when <span class="name"></span> plays hearts, they get the Queen, King, and Ace of Spades but never completely shoots the moon.  <span class="name"></span>'s high school voted them most likely to win a Darwin Award.</p>
+      </div>
     </div>
   </body>
 </html>
